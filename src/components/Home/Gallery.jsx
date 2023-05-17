@@ -5,7 +5,7 @@ const Gallery = () => {
         <div className='mt-12 w-full mx-auto'>
             <div className='text-center mb-6'>
                 <h2 className='text-4xl text-orange-700'>Our Teddy Gallery</h2>
-                <p>adorable collection of teddy bears</p>
+                <p className='p-4'><small>Welcome to our enchanting Teddy Bear Gallery! Explore a delightful collection  <br /> of cuddly teddy bears that will warm your heart. <br /> Each bear is meticulously crafted with the softest fur, endearing details, and irresistible charm.</small></p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="grid gap-4">

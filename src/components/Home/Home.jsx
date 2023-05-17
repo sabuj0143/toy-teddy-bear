@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Gallery></Gallery>
+            {/* <Gallery></Gallery> */}
             <Outlet></Outlet>
         </div>
     );
