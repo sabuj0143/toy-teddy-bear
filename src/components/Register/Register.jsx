@@ -12,7 +12,7 @@ const Register = () => {
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-purple-400">
                         <div className="card-body">
-                            <h1 className="text-2xl font-bold text-orange-800 text-center">Places Sign Up !</h1>
+                            <h1 className="text-2xl font-bold text-orange-800 text-center">Places Register !</h1>
                             <form>
                                 <div className="form-control">
                                     <label className="label">
@@ -33,7 +33,7 @@ const Register = () => {
                                     <input type="password" name='password' placeholder="Enter Your password" className="input input-bordered" />
                                 </div>
                                 <div className="form-control mt-6">
-                                    <input className="btn btn-primary" type="submit" value="Sign Up" />
+                                    <input className="btn btn-primary" type="submit" value="Register" />
                                 </div>
                             </form>
                             <p className='text-center my-4'>Already have an account ? <Link className='text-red-800 font-semibold' to="/login"> Login</Link></p>
