@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -9,7 +10,7 @@ const Login = () => {
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-purple-400">
                     <div className="card-body">
-                        <h1 className="text-2xl font-bold text-orange-500 text-center">Places Login !</h1>
+                        <h1 className="text-2xl font-bold text-orange-800 text-center">Places Login !</h1>
                         <form >
                             <div className="form-control">
                                 <label className="label">
@@ -27,8 +28,11 @@ const Login = () => {
                                 <input className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
-                        <p className='text-center my-4'>New to Kindle Teddy ?<Link className='text-red-500 font-semibold'
+                        <p className='text-center my-4'>New to Kindle Teddy ?<Link className='text-red-800 font-semibold'
                             to="/register"> Register</Link></p>
+                        <div className="divider">OR</div>
+
+                        <button className='btn btn-outline btn-primary flex items-center space-x-2'> <FaGoogle /> <span> Google</span> </button>
                     </div>
                 </div>
             </div>
