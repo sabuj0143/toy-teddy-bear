@@ -38,7 +38,7 @@ const Header = () => {
                     <img className='w-[40px] h-[40px]' src={logo} alt="" />
                     <a className="ml-2 text-xl">KINDLE.<span className='text-orange-500'>teddy</span> </a>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center items-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/allToys">All Toys</Link></li>
