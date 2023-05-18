@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../public/logo.avif'
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Header = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error(error))
+    }
+
     return (
         <>
             <div className="navbar w-full mx-auto px-4 bg-gray-200 py-5">
@@ -14,8 +24,14 @@ const Header = () => {
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/allToys">All Toys</Link></li>
-                            <li><Link to="/myToys">My Toys</Link></li>
-                            <li><Link to="/allToys">Add Toys</Link></li>
+
+                            {
+                                user && <>
+                                    <li><Link to="/myToys">My Toys</Link></li>
+                                    <li><Link to="/allToys">Add Toys</Link></li>
+                                </>
+                            }
+
                             <li><Link to="/blogs">Blogs</Link></li>
                         </ul>
                     </div>
@@ -26,13 +42,27 @@ const Header = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/allToys">All Toys</Link></li>
-                        <li><Link to="/myToys">My Toys</Link></li>
-                        <li><Link to="/addToys">Add Toys</Link></li>
+
+                        {
+                            user && <>
+                                <li><Link to="/myToys">My Toys</Link></li>
+                                <li><Link to="/allToys">Add Toys</Link></li>
+                            </>
+                        }
+
                         <li><Link to="/blogs">Blogs</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to="/login" className="btn">Login</Link>
+                    {user ? <div className='items-center gap-3 md:flex'>
+                        <div className="tooltip mt-2" data-tip={user?.displayName}>
+                            {/* <span>{user?.email}</span> */}
+                            <img className='w-[50px] h-[50px] rounded-full' src={user?.photoURL} alt="" />
+                        </div>
+                        <Link onClick={handleLogOut} className="btn">Log Out</Link>
+                    </div> :
+                        <Link to="/login" className="btn">Login</Link>
+                    }
                 </div>
             </div>
         </>
