@@ -4,7 +4,6 @@ import 'react-tabs/style/react-tabs.css';
 import img1 from '../../../public/categoryImages/classicCuddlers.jpg'
 import img2 from '../../../public/categoryImages/adorableTeddy.jpg'
 import img3 from '../../../public/categoryImages/huggableTreasures.jpg'
-import SubCategory from './SubCategory';
 
 const Category = () => {
     return (
@@ -32,9 +31,6 @@ const Category = () => {
                                 <button className="btn btn-primary">More category</button>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <SubCategory></SubCategory>
                     </div>
                 </TabPanel>
                 <TabPanel>

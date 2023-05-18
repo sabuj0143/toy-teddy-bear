@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="navbar w-full mx-auto px-4 bg-gray-200 py-5">
+            <div className="navbar w-full mx-auto px-4 py-5">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -26,10 +26,10 @@ const Header = () => {
                             <li><Link to="/allToys">All Toys</Link></li>
 
                             {
-                                user && <>
-                                    <li><Link to="/myToys">My Toys</Link></li>
-                                    <li><Link to="/allToys">Add Toys</Link></li>
-                                </>
+                                user && <li><Link to="/myToys">My Toys</Link></li>
+                            }
+                            {
+                                user && <li><Link to="/addToys">Add Toys</Link></li>
                             }
 
                             <li><Link to="/blogs">Blogs</Link></li>
@@ -46,7 +46,7 @@ const Header = () => {
                         {
                             user && <>
                                 <li><Link to="/myToys">My Toys</Link></li>
-                                <li><Link to="/allToys">Add Toys</Link></li>
+                                <li><Link to="/addToys">Add Toys</Link></li>
                             </>
                         }
 

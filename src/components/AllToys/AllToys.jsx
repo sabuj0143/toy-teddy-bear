@@ -4,6 +4,8 @@ const AllToys = () => {
     return (
         <div>
             <h3>This is All Toys</h3>
+            <h3>This is All Toys</h3>
+            <h3>This is All Toys</h3>
         </div>
     );
 };

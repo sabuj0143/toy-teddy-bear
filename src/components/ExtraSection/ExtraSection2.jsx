@@ -4,7 +4,7 @@ import img1 from '../../../public/images/hassan-ouajbir-ZY12914HZ2M-unsplash.jpg
 const ExtraSection2 = () => {
     return (
         <>
-            <div className="hero min-h-screen bg-base-200">
+            <div className="hero min-h-screen ">
                 <div className="hero-content w-[100%] flex-col lg:flex-row-reverse">
                     <div className="text-center w-[50%] lg:text-left">
                         <div className='lg:ml-28'>
