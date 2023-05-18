@@ -38,7 +38,7 @@ const AddToys = () => {
                         title: 'Success!',
                         text: 'Teddy Add Successfully',
                         icon: 'success',
-                        confirmButtonText: 'Add'
+                        confirmButtonText: 'Done'
                     })
                 }
             })
@@ -46,7 +46,7 @@ const AddToys = () => {
 
     return (
         <div className='w-full mx-auto'>
-            <div className="card-body w-[70%] mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div className="card-body w-[70%] mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">
                 <h1 className="text-2xl font-bold text-white text-center">ADD TEDDY TOYS !</h1>
                 <hr className='my-2 w-[30%] mx-auto' />
                 <form onSubmit={handleAddToy}>
