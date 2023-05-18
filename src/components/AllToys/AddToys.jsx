@@ -67,7 +67,7 @@ const AddToys = () => {
                             <label className="label">
                                 <span className="label-text">Photo URL</span>
                             </label>
-                            <input type="text" name='photo' defaultValue={user?.photoURL} className="input input-bordered" required />
+                            <input type="text" name='photo' placeholder='Enter teddy Photo URL' className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
