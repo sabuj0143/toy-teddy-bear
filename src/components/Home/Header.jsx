@@ -54,7 +54,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    {user ? <div className='items-center gap-3 md:flex'>
+                    {user ? <div className='flex items-center md:gap-3'>
                         <div className="tooltip mt-2" data-tip={user?.displayName}>
                             {/* <span>{user?.email}</span> */}
                             <img className='w-[50px] h-[50px] rounded-full' src={user?.photoURL} alt="" />

@@ -1,12 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Login = () => {
 
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
+    const [user, setUser] = useState(null);
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
 
     const { signInWithGoogle, signIn } = useContext(AuthContext);
 
@@ -38,9 +43,10 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 const loggedUser = result.user
-                console.log(loggedUser);
+                setUser(loggedUser);
                 setSuccess('User has Create successFully');
                 form.reset();
+                navigate(from, { replace: true })
             })
             .catch(error => {
                 setError(error.massage)
