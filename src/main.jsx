@@ -16,6 +16,7 @@ import AddToys from './components/AllToys/AddToys';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './AuthProvider/AuthProvider';
+import UpdateToy from './components/AllToys/UpdateToy';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: '/addToys',
         element: <AddToys></AddToys>
+      },
+      {
+        path: '/updateToy/:id',
+        element: <UpdateToy></UpdateToy>,
+        loader: ({params}) => fetch(`http://localhost:5000/teddys/${params.id}`)
       },
       {
         path: '/blogs',

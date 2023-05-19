@@ -58,7 +58,7 @@ const SingleTeddy = ({ teddy, teddys, setTeddys }) => {
                 </div>
                 <div className="card-actions justify-end">
                     <div className="btn-group btn-group-vertical space-y-4">
-                        <Link>
+                        <Link to={`/updateToy/${_id}`}>
                             <button className="btn btn-outline btn-info">Update</button>
                         </Link>
                         <button onClick={() => handleDelete(_id)} className="btn btn-outline btn-error">Delete</button>

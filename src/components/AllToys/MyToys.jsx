@@ -16,7 +16,6 @@ const MyToys = () => {
 
     return (
         <div>
-            <h2>This is My Toys: {teddys.length}</h2>
             <div className='w-full gap-4 md:grid grid-cols-1'>
                 {
                     teddys.map(teddy => <SingleTeddy
