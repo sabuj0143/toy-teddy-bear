@@ -10,7 +10,7 @@ const AddToys = () => {
 
         const form = event.target;
         const sellerName = form.sellerName.value;
-        const email = form.email.value;
+        const email = user?.email;
         const photo = form.photo.value;
         const toyName = form.toyName.value;
         const subCategory = form.subCategory.value;
@@ -104,7 +104,7 @@ const AddToys = () => {
                         <label className="label">
                             <span className="label-text">Detail description</span>
                         </label>
-                        <input type="textarea" name='description' className="input input-bordered h-[150px]" required />
+                        <textarea type="textarea" name='description' className="input input-bordered h-[150px] py-4" required />
                     </div>
                     <div className="form-control w-full mx-auto mt-6">
                         <input className="btn btn-primary" type="submit" value="Add teddy" />

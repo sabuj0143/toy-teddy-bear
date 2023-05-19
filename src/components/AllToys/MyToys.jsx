@@ -6,10 +6,9 @@ const MyToys = () => {
 
     const {user} = useContext(AuthContext);
     const [teddys, setTeddys] = useState([]);
-    console.log(teddys);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/teddys?email=${user?.email}`)
+        fetch(`http://localhost:5000/teddy?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setTeddys(data))
     }, [])
