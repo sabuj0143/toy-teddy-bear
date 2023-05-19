@@ -20,15 +20,29 @@ const Category = () => {
                 </TabList>
 
                 <TabPanel>
-                    <div className="card w-[40%] h-[60vh] mx-auto bg-gray-100 shadow-xl mt-6">
-                        <figure className="pt-10">
-                            <img src={img1} alt="Shoes" className="rounded-2xl w-[100%] mt-4 pt-4" />
-                        </figure>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title">Classic Cuddlers</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="card-actions">
-                                <button className="btn btn-primary">More category</button>
+                    <div className='flex'>
+                        <div className="card w-[40%] h-[60vh] mx-auto bg-gray-100 shadow-xl mt-6">
+                            <figure className="pt-10">
+                                <img src={img1} alt="Shoes" className="rounded-2xl w-[100%] mt-4 pt-4" />
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title">Classic Cuddlers</h2>
+                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                                <div className="card-actions">
+                                    <button className="btn btn-primary">More category</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card w-[40%] h-[60vh] mx-auto bg-gray-100 shadow-xl mt-6">
+                            <figure className="pt-10">
+                                <img src={img1} alt="Shoes" className="rounded-2xl w-[100%] mt-4 pt-4" />
+                            </figure>
+                            <div className="card-body items-center text-center">
+                                <h2 className="card-title">Classic Cuddlers</h2>
+                                <p>If a dog chews shoes whose shoes does he choose?</p>
+                                <div className="card-actions">
+                                    <button className="btn btn-primary">More category</button>
+                                </div>
                             </div>
                         </div>
                     </div>

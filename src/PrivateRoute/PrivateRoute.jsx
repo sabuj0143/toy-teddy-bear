@@ -10,7 +10,7 @@ const PrivateRoute = () => {
 
     if (loading) {
         return <>
-            <div className='w-[500%] text-center items-center justify-center'>
+            <div className='flex text-center items-center justify-center'>
                 <GridLoader color="#36d7b7" />
             </div>
         </>

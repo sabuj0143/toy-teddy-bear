@@ -45,11 +45,11 @@ const SingleTeddy = ({ teddy, teddys, setTeddys }) => {
 
     return (
         <div className="card card-side w-[50%] mx-auto bg-base-100 shadow-xl items-center">
-            <figure><img className="w-[300px] h-[200px] p-8 rounded" src={photo} alt="Movie" /></figure>
-            <div className="flex justify-between w-full pr-4">
+            <figure><img className="w-[300px] h-[200px] p-8 py-4 rounded" src={photo} alt="Movie" /></figure>
+            <div className="flex justify-between w-full p-6 pr-4">
                 <div>
                     <h3>Toy Name :  {toyName}</h3>
-                    <h3> Seller Name :  {sellerName}</h3>
+                    <p> Seller Name :  {sellerName}</p>
                     <p> User Email : {email}</p>
                     <p> Price : {price}</p>
                     <p> Rating : {rating}</p>

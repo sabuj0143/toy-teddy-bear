@@ -15,7 +15,7 @@ const MyToys = () => {
 
     return (
         <div>
-            <div className='w-full gap-4 md:grid grid-cols-1'>
+            <div className='w-full gap-4 my-6 md:grid grid-cols-1'>
                 {
                     teddys.map(teddy => <SingleTeddy
                         key={teddy._id}

@@ -39,7 +39,7 @@ const UpdateToy = () => {
                 if (data.modifiedCount > 0) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'Coffee Update Successfully',
+                        text: 'Teddy Update Successfully',
                         icon: 'success',
                         confirmButtonText: 'Ok'
                     })
