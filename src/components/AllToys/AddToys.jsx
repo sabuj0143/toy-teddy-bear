@@ -104,7 +104,7 @@ const AddToys = () => {
                         <label className="label">
                             <span className="label-text">Detail description</span>
                         </label>
-                        <input type="textarea" name='description' placeholder="Enter Description" className="input input-bordered" required />
+                        <input type="textarea" name='description' className="input input-bordered h-[150px]" required />
                     </div>
                     <div className="form-control w-full mx-auto mt-6">
                         <input className="btn btn-primary" type="submit" value="Add teddy" />

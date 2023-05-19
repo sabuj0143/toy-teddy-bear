@@ -50,11 +50,11 @@ const SingleTeddy = ({ teddy, teddys, setTeddys }) => {
             <figure><img className="w-[300px] h-[200px] p-8 rounded" src={photo} alt="Movie" /></figure>
             <div className="flex justify-between w-full pr-4">
                 <div>
-                    <h2 className="card-title">ToyName : {toyName}</h2>
-                    <p> SellerName : {sellerName}</p>
+                    <h3>ToyName :  {toyName}</h3>
+                    <h3> SellerName :  {sellerName}</h3>
                     <p> Price : {price}</p>
                     <p> Rating : {rating}</p>
-                    <p> Description : {description}</p>
+                    <p> Description : <small> {description}</small></p>
                 </div>
                 <div className="card-actions justify-end">
                     <div className="btn-group btn-group-vertical space-y-4">

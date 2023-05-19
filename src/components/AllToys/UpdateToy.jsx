@@ -108,7 +108,7 @@ const UpdateToy = () => {
                         <label className="label">
                             <span className="label-text">Detail description</span>
                         </label>
-                        <input type="text" name='description' defaultValue={description} placeholder="Enter Description" className="input input-bordered" required />
+                        <input type="textarea" name='description' defaultValue={description}  className="input input-bordered h-[150px]" required />
                     </div>
                     <div className="form-control w-full mx-auto mt-6">
                         <input className="btn btn-primary" type="submit" value="Update teddy" />
