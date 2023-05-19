@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import AllToysCart from './AllToysCart';
 
 
 const AllToys = () => {
+
+    const [allTeddy, setAllTeddy] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/teddys')
+            .then(res => res.json())
+            .then(data => setAllTeddy(data))
+    }, [])
+
+
     return (
-        <div className='my-8'>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title">
-                        Shoes!
-                        <div className="badge badge-secondary">NEW</div>
-                    </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
-                    </div>
-                </div>
+        <>
+            <div className='md:grid grid-cols-3'>
+                {
+                    allTeddy.map(teddy => <AllToysCart
+                        key={teddy._id}
+                        teddy={teddy}
+                    >
+
+                    </AllToysCart>)
+                }
             </div>
-        </div>
+        </>
     );
 };
 
