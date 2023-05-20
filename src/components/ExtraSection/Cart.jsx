@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cart = ({ toy }) => {
 
-    const { sellerName, email, photo, toyName, subCategory, price, rating, quantity, description } = toy;
+    const { photo, toyName, price, rating } = toy;
 
     return (
         <div className='w-[80%] my-7'>
