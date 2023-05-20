@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const UpdateToy = () => {
+
+    TabTitle('KindleTeddy-UpdateToy')
 
     const toys = useLoaderData();
     // console.log(toys);

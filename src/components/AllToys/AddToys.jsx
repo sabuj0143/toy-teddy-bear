@@ -1,8 +1,12 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import Swal from 'sweetalert2'
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const AddToys = () => {
+
+    TabTitle('KindleTeddy - AddToys')
+
     const { user } = useContext(AuthContext)
 
     const handleAddToy = event => {

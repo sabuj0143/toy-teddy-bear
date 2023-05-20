@@ -1,8 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import SingleTeddy from './SingleTeddy';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const MyToys = () => {
+
+    TabTitle('KindleTeddy-MyToys')
 
     const {user} = useContext(AuthContext);
     const [teddys, setTeddys] = useState([]);

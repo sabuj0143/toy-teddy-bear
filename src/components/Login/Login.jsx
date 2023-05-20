@@ -2,8 +2,11 @@ import React, { useContext, useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const Login = () => {
+
+    TabTitle ('KindleTeddy - Login')
 
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');

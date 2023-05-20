@@ -1,7 +1,11 @@
 
 import { Link, useLoaderData } from 'react-router-dom';
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const ViewDetailsTeddy = () => {
+
+    TabTitle('KindleTeddy-ViewDetails')
+
     const viewDetails = useLoaderData();
     const { sellerName, email, photo, toyName, subCategory, price, rating, quantity, description } = viewDetails;
 

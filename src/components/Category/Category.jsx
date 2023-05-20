@@ -4,10 +4,11 @@ import 'react-tabs/style/react-tabs.css';
 import img1 from '../../../public/categoryImages/classicCuddlers.jpg'
 import img2 from '../../../public/categoryImages/adorableTeddy.jpg'
 import img3 from '../../../public/categoryImages/huggableTreasures.jpg'
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const Category = () => {
     return (
-        <div className='w-[80%] h-[80vh] mx-auto my-10'>
+        <div className='w-[80%] h-[90vh] mx-auto my-10 rounded-lg p-4 bg-slate-400'>
             <div className='text-center text-5xl font-semibold my-4'>
                 <h4>Shop By Category</h4>
                 <hr className='my-4' />
@@ -29,7 +30,7 @@ const Category = () => {
                                 <h2 className="card-title">Classic Cuddlers</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary">More category</button>
+                                    <button className="btn btn-primary">View</button>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +42,7 @@ const Category = () => {
                                 <h2 className="card-title">Classic Cuddlers</h2>
                                 <p>If a dog chews shoes whose shoes does he choose?</p>
                                 <div className="card-actions">
-                                    <button className="btn btn-primary">More category</button>
+                                    <button className="btn btn-primary">View</button>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +57,7 @@ const Category = () => {
                             <h2 className="card-title">Adorable Plush</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
                             <div className="card-actions">
-                                <button className="btn btn-primary">More category</button>
+                                <button className="btn btn-primary">View</button>
                             </div>
                         </div>
                     </div>
@@ -70,7 +71,7 @@ const Category = () => {
                             <h2 className="card-title">Huggable Treasures</h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
                             <div className="card-actions">
-                                <button className="btn btn-primary">More category</button>
+                                <button className="btn btn-primary">View</button>
                             </div>
                         </div>
                     </div>

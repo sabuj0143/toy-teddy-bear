@@ -3,8 +3,11 @@ import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 import { updateProfile } from 'firebase/auth';
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const Register = () => {
+
+    TabTitle('KindleTeddy-Register')
 
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');

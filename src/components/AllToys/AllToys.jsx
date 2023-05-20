@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import AllToysCart from './AllToysCart';
+import { TabTitle } from '../../Utiles/FunctionTitle';
 
 
 const AllToys = () => {
+
+    TabTitle('KindleTeddy-AllToys')
 
     const [allTeddy, setAllTeddy] = useState([]);
 
