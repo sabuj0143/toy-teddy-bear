@@ -14,18 +14,40 @@ const AllToys = () => {
 
 
     return (
-        <>
-            <div className='md:grid grid-cols-3'>
-                {
-                    allTeddy.map(teddy => <AllToysCart
-                        key={teddy._id}
-                        teddy={teddy}
-                    >
+        <div className='my-10'>
+            <>
+                <div className="overflow-x-auto">
+                    <table className="table w-full">
+                        {/* head*/}
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Seller Name</th>
+                                <th>Toy Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Available Quantity</th>
+                                <th>View Details</th>
+                            </tr>
+                        </thead>
 
-                    </AllToysCart>)
-                }
-            </div>
-        </>
+                        {/* Map  */}
+
+                        {
+                            allTeddy.map(teddy => <AllToysCart
+                                key={teddy._id}
+                                teddy={teddy}
+                            >
+
+                            </AllToysCart>)
+                        }
+
+                    </table>
+                </div>
+
+
+            </>
+        </div>
     );
 };
 
