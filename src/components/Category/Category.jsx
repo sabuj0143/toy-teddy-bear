@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import img1 from '../../../public/categoryImages/classicCuddlers.jpg'
 import img2 from '../../../public/categoryImages/adorableTeddy.jpg'
 import img3 from '../../../public/categoryImages/huggableTreasures.jpg'
-import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const Category = () => {
+
+    const [category, setCategory] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:5000/teddys')
+        .then(res => res.json())
+        .then(data => setCategory(data))
+    }, [])
+
+        
+
     return (
         <div className='w-[80%] h-[90vh] mx-auto my-10 rounded-lg p-4 bg-slate-400'>
             <div className='text-center text-5xl font-semibold my-4'>

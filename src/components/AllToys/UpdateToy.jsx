@@ -5,7 +5,7 @@ import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const UpdateToy = () => {
 
-    TabTitle('KindleTeddy-UpdateToy')
+    TabTitle('KindleTeddy-UpdateTeddy')
 
     const toys = useLoaderData();
     // console.log(toys);

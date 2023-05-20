@@ -5,7 +5,7 @@ import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const MyToys = () => {
 
-    TabTitle('KindleTeddy-MyToys')
+    TabTitle('KindleTeddy-MyTeddy')
 
     const {user} = useContext(AuthContext);
     const [teddys, setTeddys] = useState([]);

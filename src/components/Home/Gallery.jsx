@@ -34,7 +34,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div class="grid gap-4">
-                    <div>
+                    <div data-aos="zoom-in-left">
                         <img className="h-auto max-w-full rounded-lg" src="https://i.ibb.co/0hg03yH/mche-lee-hnws-Rpz-Tba-Y-unsplash.jpg" alt="" />
                     </div>
                     <div data-aos="zoom-in-left">
@@ -45,7 +45,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div class="grid gap-4">
-                    <div>
+                    <div data-aos="zoom-in-left">
                         <img className="h-auto max-w-full rounded-lg" src="https://i.ibb.co/kSnPX75/adam-lukomski-0-9-X3jzq-IG4-unsplash.jpg" alt="" />
                     </div>
                     <div data-aos="zoom-out-up">

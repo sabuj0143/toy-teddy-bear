@@ -4,7 +4,7 @@ import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const ViewDetailsTeddy = () => {
 
-    TabTitle('KindleTeddy-ViewDetails')
+    TabTitle('KindleTeddy-ViewDetailsTeddy')
 
     const viewDetails = useLoaderData();
     const { sellerName, email, photo, toyName, subCategory, price, rating, quantity, description } = viewDetails;

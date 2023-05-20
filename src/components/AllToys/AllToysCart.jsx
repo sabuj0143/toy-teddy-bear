@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { TabTitle } from '../../Utiles/FunctionTitle';
 
 const AllToysCart = ({ teddy }) => {
-    TabTitle('KindleTeddy-AllToysCart')
+    TabTitle('KindleTeddy-AllTeddyCart')
     const { _id, price, toyName, subCategory, quantity, sellerName } = teddy;
     return (
         <>
