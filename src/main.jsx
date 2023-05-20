@@ -17,6 +17,8 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './AuthProvider/AuthProvider';
 import UpdateToy from './components/AllToys/UpdateToy';
+import ViewDetailsTeddy from './components/AllToys/ViewDetailsTeddy';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,11 @@ const router = createBrowserRouter([
         path: '/updateToy/:id',
         element: <UpdateToy></UpdateToy>,
         loader: ({params}) => fetch(`http://localhost:5000/teddys/${params.id}`)
+      },
+      {
+        path: '/viewDetailsTeddy/:id',
+        element:<PrivateRoute><ViewDetailsTeddy></ViewDetailsTeddy></PrivateRoute>,
+        loader: ({params}) => fetch(`http://localhost:5000/viewDetailsTeddy/${params.id}`)
       },
       {
         path: '/blogs',

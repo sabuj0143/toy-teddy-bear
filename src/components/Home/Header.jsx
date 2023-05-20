@@ -59,9 +59,9 @@ const Header = () => {
                             {/* <span>{user?.email}</span> */}
                             <img className='w-[50px] h-[50px] rounded-full' src={user?.photoURL} alt="" />
                         </div>
-                        <Link onClick={handleLogOut} className="btn btn-primary">Log Out</Link>
+                        <Link onClick={handleLogOut} className="btn btn-outline btn-primary">Log Out</Link>
                     </div> :
-                        <Link to="/login" className="btn btn-primary">Login</Link>
+                        <Link to="/login" className="btn btn-outline btn-primary">Login</Link>
                     }
                 </div>
             </div>
