@@ -6,23 +6,17 @@ const UpdateToy = () => {
 
     const toys = useLoaderData();
     // console.log(toys);
-    const { _id, price, toyName, photo, quantity, email, subCategory, sellerName, rating, description } = toys
+    const { _id, price,  quantity, description } = toys
 
     const handleUpdateToy = event => {
         event.preventDefault();
 
         const form = event.target;
-        const sellerName = form.sellerName.value;
-        const email = form.email.value;
-        const photo = form.photo.value;
-        const toyName = form.toyName.value;
-        const subCategory = form.subCategory.value;
         const price = form.price.value;
-        const rating = form.rating.value;
         const quantity = form.quantity.value;
         const description = form.description.value;
 
-        const updateToy = { sellerName, email, photo, toyName, subCategory, price, rating, quantity, description }
+        const updateToy = {price, quantity, description }
         // console.log(updateToy);
 
         // Send to data server site 
@@ -57,45 +51,9 @@ const UpdateToy = () => {
                     <div className='md:grid grid-cols-2 gap-4'>
                         <div className="form-control">
                             <label className="label">
-                                <span className="label-text">Seller Name</span>
-                            </label>
-                            <input type="text" name='sellerName' defaultValue={sellerName} placeholder='Enter your name' className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input type="email" name='email' defaultValue={email} className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Photo URL</span>
-                            </label>
-                            <input type="text" name='photo' defaultValue={photo} placeholder='Enter teddy Photo URL' className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Toy Name</span>
-                            </label>
-                            <input type="text" name='toyName' defaultValue={toyName} placeholder='Enter Your Toy Name' className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Sub Category</span>
-                            </label>
-                            <input type="text" name='subCategory' placeholder='Enter Sub-category' defaultValue={subCategory} className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
                                 <span className="label-text">Price</span>
                             </label>
                             <input type="text" name='price' defaultValue={price} placeholder="$" className="input input-bordered" required />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Rating</span>
-                            </label>
-                            <input type="text" name='rating' defaultValue={rating} placeholder="Enter Rating" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">

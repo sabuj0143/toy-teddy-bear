@@ -14,7 +14,7 @@ const Home = () => {
             {/* <Gallery></Gallery> */}
             {/* <Category></Category> */}
             <Outlet></Outlet>
-            {/* <ExtraSection1></ExtraSection1> */}
+            <ExtraSection1></ExtraSection1>
         </div>
     );
 };
