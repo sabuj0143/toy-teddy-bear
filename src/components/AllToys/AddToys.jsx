@@ -27,7 +27,7 @@ const AddToys = () => {
         // console.log(newTeddy);
 
         // Send to data server site 
-        fetch('http://localhost:5000/teddys', {
+        fetch('https://assignment-11-teddy-bear-server.vercel.app/teddys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -49,7 +49,7 @@ const AddToys = () => {
     };
 
 
-    const options = ['Squad', 'Brigade', 'Treasures'];
+    const options = ['Squad', 'Brigade', 'Treasures', 'Haven', 'Berry teddy'];
 
     return (
         <div className='w-full mx-auto my-5'>
@@ -87,7 +87,7 @@ const AddToys = () => {
                             <label className="label">
                                 <span className="label-text">Sub Category</span>
                             </label>
-                            <select name="subCategory" className='h-[50px] rounded'>
+                            <select name="subCategory" placeholder='' className='h-[50px] rounded'>
                                 {options.map((option, index) => (
                                     <option key={index} value={option}>
                                         {option}
@@ -132,6 +132,3 @@ const AddToys = () => {
 };
 
 export default AddToys;
-
-
-{/* <input type="text" name='subCategory' placeholder='Enter Sub-category' className="input input-bordered" required />  */ }

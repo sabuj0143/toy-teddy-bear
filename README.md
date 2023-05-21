@@ -17,4 +17,4 @@ To install the project dependencies, run the following command in your terminal:
 
 Create a Kindle Teddy website.
 
-## link: 
+## link: https://kindle-teddy.web.app/

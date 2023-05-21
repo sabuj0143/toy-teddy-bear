@@ -5,7 +5,7 @@ import bgImg from '../../../public/images/nathan-dumlao-43wvIhzBUBE-unsplash.jpg
 const Banner = () => {
     return (
         <div className='w-[100%] mx-auto'>
-            <div className="hero min-h-screen" style={{ backgroundImage: `url(${bgImg})` }}>
+            <div className="hero min-h-screen w-[100%] h-[100vh]" style={{ backgroundImage: `url(${bgImg})` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md" data-aos="fade-up" data-aos-duration="3000">

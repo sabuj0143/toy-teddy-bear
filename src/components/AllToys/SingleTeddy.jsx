@@ -21,7 +21,7 @@ const SingleTeddy = ({ teddy, teddys, setTeddys }) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/teddys/${_id}`, {
+                fetch(`https://assignment-11-teddy-bear-server.vercel.app/teddys/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

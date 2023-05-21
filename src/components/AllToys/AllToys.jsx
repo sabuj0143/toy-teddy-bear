@@ -11,7 +11,7 @@ const AllToys = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5000/teddys')
+        fetch('https://assignment-11-teddy-bear-server.vercel.app/teddys')
             .then(res => res.json())
             .then(data => setAllTeddy(data))
     }, [])

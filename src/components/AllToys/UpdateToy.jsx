@@ -23,7 +23,7 @@ const UpdateToy = () => {
         // console.log(updateToy);
 
         // Send to data server site 
-        fetch(`http://localhost:5000/teddys/${_id}`, {
+        fetch(`https://assignment-11-teddy-bear-server.vercel.app/teddys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -9,7 +9,7 @@ import Cart from './Cart';
 const ExtraSection1 = () => {
     const [allTeddy, setAllTeddy] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/teddys')
+        fetch('https://assignment-11-teddy-bear-server.vercel.app/teddys')
         .then(res => res.json())
         .then(data => {
             setAllTeddy(data);
@@ -17,7 +17,7 @@ const ExtraSection1 = () => {
     }, [])
     return (
         <>
-            <Marquee className='bg-[#FFDC68]'>
+            <Marquee className='bg-gray-200'>
                     {
                         allTeddy.map(toy => <Cart
                         key={toy._id}

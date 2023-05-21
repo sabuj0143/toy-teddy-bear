@@ -11,7 +11,7 @@ const ViewDetailsTeddy = () => {
 
     return (
         <div className='w-full my-7'>
-            <div className="card w-[50%] mx-auto bg-base-100 shadow-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div className="card w-[50%] h-[100vh] mx-auto bg-base-100 shadow-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                 <figure><img className='w-[40%] rounded-xl' src={photo} alt="Shoes" /></figure>
                 <div className="card-body text-white">
                     <hr  className='my-2 w-[70%] mx-auto'/>

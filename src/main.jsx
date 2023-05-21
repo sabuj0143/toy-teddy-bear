@@ -45,12 +45,12 @@ const router = createBrowserRouter([
       {
         path: '/updateToy/:id',
         element: <UpdateToy></UpdateToy>,
-        loader: ({params}) => fetch(`http://localhost:5000/teddys/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-11-teddy-bear-server.vercel.app/${params.id}`)
       },
       {
         path: '/viewDetailsTeddy/:id',
         element:<PrivateRoute><ViewDetailsTeddy></ViewDetailsTeddy></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/viewDetailsTeddy/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-11-teddy-bear-server.vercel.app/viewDetailsTeddy/${params.id}`)
       },
       {
         path: '/blogs',
