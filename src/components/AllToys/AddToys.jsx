@@ -48,6 +48,9 @@ const AddToys = () => {
             })
     };
 
+
+    const options = ['Honey Bear Teddy', 'Teddykins Teddy', 'Sugar Teddy', 'Biscuit Teddy', 'Troop Teddy'];
+
     return (
         <div className='w-full mx-auto my-5'>
             <div className="card-body w-[70%] mx-auto bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg">
@@ -79,12 +82,20 @@ const AddToys = () => {
                             </label>
                             <input type="text" name='toyName' placeholder='Enter Your Toy Name' className="input input-bordered" required />
                         </div>
+
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Sub Category</span>
                             </label>
-                            <input type="text" name='subCategory' placeholder='Enter Sub-category' className="input input-bordered" required />
+                            <select name="subCategory" className='h-[50px] rounded'>
+                                {options.map((option, index) => (
+                                    <option key={index} value={option}>
+                                        {option}
+                                    </option>
+                                ))}
+                            </select>
                         </div>
+
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Price</span>
@@ -121,3 +132,6 @@ const AddToys = () => {
 };
 
 export default AddToys;
+
+
+{/* <input type="text" name='subCategory' placeholder='Enter Sub-category' className="input input-bordered" required />  */ }
