@@ -17,7 +17,7 @@ const ExtraSection1 = () => {
     }, [])
     return (
         <>
-            <Marquee>
+            <Marquee className='bg-[#FFDC68]'>
                     {
                         allTeddy.map(toy => <Cart
                         key={toy._id}

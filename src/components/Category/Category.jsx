@@ -17,7 +17,7 @@ const Category = () => {
     const adorablePlushTeddys3 = teddys.filter(teddy => teddy.subCategory === 'Brigade');
 
     return (
-        <div className='w-[80%] h-[90vh] mx-auto my-10 rounded-lg p-4 bg-gray-200'>
+        <div className='w-[80%] h-[90vh] mx-auto my-10 shadow-xl rounded-lg p-4 bg-gray-200'>
             <div className='text-center text-5xl font-semibold my-4'>
                 <h4>Shop By Category</h4>
                 <hr className='my-4 text-red-500' />
@@ -39,6 +39,7 @@ const Category = () => {
                                 <div className="card-body">
                                     <h2>Teddy Name : <small>{teddy.toyName}</small></h2>
                                     <h2>Price : <small>{teddy.price}</small></h2>
+                                    <h2>Rating : <small>{teddy.rating}</small></h2>
                                     <p>Description : <small>{teddy.description}</small></p>
                                     <div className="card-actions">
                                     <button className='btn btn-outline btn-primary'>View Details</button>
@@ -58,6 +59,7 @@ const Category = () => {
                                 <div className="card-body">
                                     <h2>Teddy Name : {teddy.toyName}</h2>
                                     <h2>Price : <small>{teddy.price}</small></h2>
+                                    <h2>Rating : <small>{teddy.rating}</small></h2>
                                     <p>Description : <small>{teddy.description}</small></p>
                                     <div className="card-actions mt-4">
                                     <button className='btn btn-outline btn-primary'>View Details</button>
@@ -77,6 +79,7 @@ const Category = () => {
                                 <div className="card-body">
                                     <h2>Teddy Name : <small>{teddy.toyName}</small></h2>
                                     <h2>Price : <small>{teddy.price}</small></h2>
+                                    <h2>Rating : <small>{teddy.rating}</small></h2>
                                     <p>Description : <small>{teddy.description}</small></p>
                                     <div className="card-actions mt-4">
                                     <button className='btn btn-outline btn-primary'>View Details</button>
