@@ -3,8 +3,8 @@ import img1 from '../../../public/images/hassan-ouajbir-ZY12914HZ2M-unsplash.jpg
 
 const ExtraSection2 = () => {
     return (
-        <>
-            <div className="hero min-h-screen ">
+        <div>
+            <div className="hero w-[100%] mx-auto my-6">
                 <div className="hero-content w-[100%] flex-col lg:flex-row-reverse">
                     <div className="text-center w-[50%] lg:text-left">
                         <div className='lg:ml-28' data-aos="fade-down">
@@ -17,7 +17,7 @@ const ExtraSection2 = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -49,7 +49,7 @@ const AddToys = () => {
     };
 
 
-    const options = ['Honey Bear Teddy', 'Teddykins Teddy', 'Sugar Teddy', 'Biscuit Teddy', 'Troop Teddy'];
+    const options = ['Squad', 'Brigade', 'Treasures'];
 
     return (
         <div className='w-full mx-auto my-5'>
